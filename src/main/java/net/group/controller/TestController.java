@@ -14,7 +14,7 @@ public class TestController {
   @GetMapping
   public ResponseEntity<CustomResponseBody<Object>> testApi() {
     CustomResponseBody<Object> responseBody =
-        CustomResponseBody.builder().data(null).message("version 2").build();
+        CustomResponseBody.builder().data(null).message("version 3").build();
 
     return new ResponseEntity<>(responseBody, HttpStatus.OK);
   }
